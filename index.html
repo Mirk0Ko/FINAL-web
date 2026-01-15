@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simon Says</title>
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
 </head>
-<h1>hola</h1>
 <body>
-    
+
+	<header class="header">
+		<h1 class="titulo-principal">Simon Says</h1>
+	</header>
+
+	<main class="contenedor-principal">
+
+		<section class="inicio" id="inicio">
+			<h2 class="subtitulo">Ingresá tu nombre</h2>
+
+			<input 
+				type="text" 
+				id="nombreJugador" 
+				class="input-texto"
+				placeholder="Mínimo 3 letras">
+
+			<button id="btnIniciar" class="boton">
+				Iniciar Juego
+			</button>
+		</section>
+
+		<section class="juego oculto" id="juego">
+			<div class="info-juego">
+				<p>Jugador: <span id="nombreMostrado"></span></p>
+				<p>Nivel: <span id="nivelActual">1</span></p>
+				<p>Puntaje: <span id="puntaje">0</span></p>
+			</div>
+
+			<div class="tablero">
+				<button class="color rojo" data-color="rojo"></button>
+				<button class="color verde" data-color="verde"></button>
+				<button class="color azul" data-color="azul"></button>
+				<button class="color amarillo" data-color="amarillo"></button>
+			</div>
+		</section>
+
+	</main>
+
+	<div class="modal oculto" id="modalPerder">
+		<div class="modal-contenido">
+			<p>Perdiste 😢</p>
+			<button id="btnReiniciar" class="boton">
+				Reiniciar
+			</button>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<a 
+			href="https://github.com/TU-USUARIO/TU-REPO" 
+			target="_blank">
+			Ver código en GitHub
+		</a>
+	</footer>
+
+	<script src="js/variables.js"></script>
+	<script src="js/juego.js"></script>
+	<script src="js/eventos.js"></script>
+
 </body>
 </html>
