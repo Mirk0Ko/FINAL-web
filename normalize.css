@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+	.tablero {
+		width: 180px;
+	}
+
+	.color {
+		width: 80px;
+		height: 80px;
+	}
+
+	.titulo-principal {
+		font-size: 1.5rem;
+	}
+
+	.info-juego {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+}
