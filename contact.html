@@ -17,27 +17,40 @@
 
 	<main class="contenedor-principal">
 
-		<form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
-			<input
-				type="text"
-				id="nombreContacto"
-				class="input-texto"
-				placeholder="Nombre">
+		<form id="formContacto" class="formulario">
+			<div class="grupo-input">
+				<input
+					type="text"
+					id="nombreContacto"
+					class="input-texto"
+					placeholder="Nombre">
+				<span class="error" id="errorNombre"></span>
+			</div>
 
-			<input
-				type="email"
-				id="mailContacto"
-				class="input-texto"
-				placeholder="Email">
+			<div class="grupo-input">
+				<input
+					type="email"
+					id="mailContacto"
+					class="input-texto"
+					placeholder="Email">
+				<span class="error" id="errorMail"></span>
+			</div>
 
-			<textarea
-				id="mensajeContacto"
-				class="input-texto"
-				placeholder="Mensaje"></textarea>
+			<div class="grupo-input">
+				<textarea
+					id="mensajeContacto"
+					class="input-texto"
+					placeholder="Mensaje"></textarea>
+				<span class="error" id="errorMensaje"></span>
+			</div>
 
 			<button type="submit" class="boton">
 				Enviar
 			</button>
+
+			<div id="mensajeExito" class="mensaje-exito oculto">
+				 Mensaje enviado correctamente
+			</div>
 		</form>
 
 		
