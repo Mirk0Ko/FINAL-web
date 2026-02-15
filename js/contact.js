@@ -50,20 +50,20 @@ function validarMail(mail) {
 }
 
 function abrirEmail(nombre, mail, mensaje) {
+	
 	var asunto;
 	var cuerpo;
 	var enlace;
 
-	asunto = 'Contacto desde Simon Says';
-	cuerpo = 'Nombre: ' + nombre + '%0D%0A';
-	cuerpo = cuerpo + 'Email: ' + mail + '%0D%0A%0D%0A';
-	cuerpo = cuerpo + mensaje;
+	asunto = encodeURIComponent('Contacto desde Simon Says');
+
+	cuerpo = 
+		'Nombre: ' + nombre + '\n' +
+		'Email: ' + mail + '\n\n' +
+		mensaje;
+
+	cuerpo = encodeURIComponent(cuerpo);
 
 	enlace = 'mailto:correo@ejemplo.com?subject=' + asunto + '&body=' + cuerpo;
-	window.location.href = enlace;
 
-}
-
-window.location.href =
-		'mailto:correo@ejemplo.com?subject=' + asunto + '&body=' + cuerpo;
-
+ window.location.href = mailtoLink}
