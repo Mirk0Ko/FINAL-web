@@ -68,4 +68,6 @@ function abrirEmail(nombre, mail, mensaje) {
 
  window.location.href = mailtoLink}
 
- window.onload = iniciarContacto;
+ 
+ 
+window.onload = iniciarContacto;
