@@ -64,6 +64,8 @@ function abrirEmail(nombre, mail, mensaje) {
 
 	cuerpo = encodeURIComponent(cuerpo);
 
-	enlace = 'mailto:correo@ejemplo.com?subject=' + asunto + '&body=' + cuerpo;
+	var enlace = 'mailto:correo@ejemplo.com?subject=' + asunto + '&body=' + cuerpo;
 
  window.location.href = mailtoLink}
+
+ window.onload = iniciarContacto;

@@ -19,7 +19,7 @@ form {
 /* Títulos */
 h1 {
   text-align: center;
-  color: #4caf50; /* verde estilo juego */
+  color: #4caf50; 
   margin-bottom: 0.5rem;
 }
 
@@ -54,12 +54,12 @@ textarea:focus {
 
 /* Mensaje de error */
 .error {
-  color: #f44336;
-  font-size: 0.85rem;
-  margin-top: -0.8rem;
-  margin-bottom: 1rem;
-  display: none;
+	display: none;
+	color: red;
+	font-size: 0.8rem;
+	margin-bottom: 10px;
 }
+
 
 /* Botón */
 button {
