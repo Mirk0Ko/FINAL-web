@@ -25,7 +25,7 @@ Cómo jugar:
 
 Demo en vivo
 
-GitHub Pages:
+GitHub Pages: [pages](https://mirk0ko.github.io/FINAL-web/)
 
 Características:
 
