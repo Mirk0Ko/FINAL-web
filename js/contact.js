@@ -151,5 +151,5 @@ function abrirEmail(nombre, mail, mensaje) {
 	window.location.href = enlace;
 }
 
-// Inicializar cuando carga la página
+// Inicializar cuando carga la pagina
 document.addEventListener('DOMContentLoaded', iniciarContacto);
