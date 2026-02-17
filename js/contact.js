@@ -11,7 +11,7 @@ function iniciarContacto() {
 	inputMail.addEventListener('blur', validarMailEnTiempoReal);
 	inputMensaje.addEventListener('blur', validarMensajeEnTiempoReal);
 	
-	// Limpiar error cuando escriben
+	// Limpia el error cuando escriben
 	inputNombre.addEventListener('input', function() {
 		limpiarError('errorNombre');
 	});
@@ -138,10 +138,6 @@ function mostrarMensajeExito() {
 	var mensajeExito = document.getElementById('mensajeExito');
 	mensajeExito.classList.remove('oculto');
 	
-	// Ocultar el mensaje después de 3 segundos
-	setTimeout(function() {
-		mensajeExito.classList.add('oculto');
-	}, 3000);
 }
 
 function abrirEmail(nombre, mail, mensaje) {
