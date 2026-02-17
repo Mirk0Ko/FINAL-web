@@ -1,8 +1,8 @@
 
 
-/* =====================
-   VARIABLES GLOBALES
-===================== */
+/* 
+   Variables globales
+*/
 
 var colores;
 var secuencia;
@@ -12,9 +12,9 @@ var puntaje;
 var nombreJugador;
 var puedeJugar;
 
-/* =====================
-   INICIALIZACIÓN
-===================== */
+/* 
+   Inicializacion
+*/
 
 function iniciarAplicacion() {
 	var botonIniciar;
@@ -33,9 +33,9 @@ function iniciarAplicacion() {
 	agregarEventosColores(botonesColores);
 }
 
-/* =====================
-   INICIO DE PARTIDA
-===================== */
+/*
+   Inicio de la partida
+*/
 
 function iniciarPartida() {
 	var inputNombre;
@@ -66,9 +66,9 @@ function iniciarJuego() {
 	agregarColor();
 }
 
-/* =====================
-   LÓGICA DEL JUEGO
-===================== */
+/* 
+   Logica del juego
+*/
 
 function agregarColor() {
 	var indiceAleatorio;
@@ -113,9 +113,9 @@ function habilitarJugador() {
 	puedeJugar = true;
 }
 
-/* =====================
-   INTERACCIÓN JUGADOR
-===================== */
+/*
+   Interaccion del jugador
+*/
 
 function agregarEventosColores(botones) {
 	var i;
@@ -157,9 +157,9 @@ function verificarSecuencia() {
 	}
 }
 
-/* =====================
-   UI Y MODAL
-===================== */
+/* 
+   UI y modal
+*/
 
 function actualizarInfo() {
 	document.getElementById('nivelActual').textContent = nivel;
@@ -176,8 +176,8 @@ function reiniciarJuego() {
 	document.getElementById('juego').classList.add('oculto');
 }
 
-/* =====================
-   LOAD
-===================== */
+/* 
+   Load
+*/
 
 window.addEventListener('load', iniciarAplicacion);
