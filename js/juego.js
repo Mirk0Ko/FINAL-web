@@ -37,11 +37,26 @@ function iniciarAplicacion() {
    Inicio de la partida
 */
 
+
+function validarNombre(nombre) {
+	return nombre.trim().length >= 3;
+}
+
+function mostrarErrorNombre() {
+	document.getElementById('error-nombreJugador').style.display = 'block';
+}
+
+function ocultarErrorNombre() {
+	document.getElementById('error-nombreJugador').style.display = 'none';
+}
+
+
 function iniciarPartida() {
 	var inputNombre;
 
 	inputNombre = document.getElementById('nombreJugador');
 	nombreJugador = inputNombre.value.trim();
+
 
 	if (nombreJugador.length < 3) {
 		alert('El nombre debe tener al menos 3 letras');

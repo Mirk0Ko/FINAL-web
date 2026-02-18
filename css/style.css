@@ -121,6 +121,14 @@ body {
 	width: 280px;
 }
 
+.error {
+	display: none;
+	color: red;
+	font-size: 0.9rem;
+	margin-top: 5px;
+}
+
+
 textarea.input-texto {
 	resize: none;
 	height: 100px;
